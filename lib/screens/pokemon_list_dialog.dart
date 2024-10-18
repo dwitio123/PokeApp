@@ -104,13 +104,17 @@ class PokemonListDialog extends StatelessWidget {
                                       fit: BoxFit.cover,
                                     ),
                                     const SizedBox(height: 10),
-                                    Text(
-                                      pokemon['name'].toString().toUpperCase(),
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
+                                    Flexible(
+                                      child: Text(
+                                        pokemon['name']
+                                            .toString()
+                                            .toUpperCase(),
+                                        style: const TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                        textAlign: TextAlign.center,
                                       ),
-                                      textAlign: TextAlign.center,
                                     ),
                                   ],
                                 ),
